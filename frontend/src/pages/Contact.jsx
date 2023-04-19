@@ -1,15 +1,14 @@
 import { Grid, Typography, Button } from "@mui/material";
 
 import { makeStyles } from '@mui/styles';
-import blood from '../images/doc.svg';
+import blood from '../images/undraw_medicine_b-1-ol (1).svg';
 import { Bloodtype } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom';
 import { getToken } from '../services/LocalStorageService';
 
 const useStyles = makeStyles({
   root: {
-    background: 'radial-gradient(circle, rgba(158,0,0,0.8883928571428571) 0%, rgba(0,0,0,0.9780287114845938) 90%)',
-    
+    background: 'radial-gradient(circle, rgb(84 0 0 / 89%) 0%, rgb(0 0 0 / 98%) 90%)',
     color: '#fff',
     display: 'flex',
     padding: '2rem',
@@ -32,7 +31,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     marginBottom: '2rem',
     '& h1': {
-      fontSize: '3rem',
+      fontSize: '7rem',
       fontWeight: 'bold',
       marginRight: '1rem',
       fontFamily: 'EB Garamond, serif',
@@ -56,8 +55,8 @@ const useStyles = makeStyles({
     },
     '& p': {
       margin: 0,
-      fontSize: '1.2rem',
-      fontWeight: 'bold',
+      fontSize: '1.7rem',
+      fontWeight: '400',
       lineHeight: '1.5',
     }
   },
@@ -95,7 +94,7 @@ const Main = () => {
       <div className={classes.leftSection}>
         <div className={classes.header}>
           <Typography variant='h1'> Blood Donation</Typography>
-          <Bloodtype />
+          <Bloodtype style={{fontSize: 85}}/>
         </div>
         <div className={classes.facts}>
           <div className={classes.factItem}>

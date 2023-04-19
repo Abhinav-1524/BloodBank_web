@@ -16,18 +16,19 @@ const BloodDonation = () => {
     <>
       <div className='blood-donation-container' style={{ background: 'radial-gradient(circle, rgba(158,0,0,0.8883928571428571) 0%, rgba(0,0,0,0.9780287114845938) 90%)', paddingTop: '50px' ,height: '874px'}}>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-          <h1 style={{ fontSize: '64px', color: '#fff' }}>Blood Donation</h1>
-          <BloodtypeSharpIcon sx={{ fontSize: 40, color: '#fff' }} />
+          <h1 style={{ fontSize: '64px', color: '#fff',fontFamily:'EB Garamond, serif' }}>Blood Donation</h1>
+          <BloodtypeSharpIcon sx={{ fontSize: 45 , color: '#fff' }} />
         </div>
           <p style={{ color: '#fff', fontSize: '24px', lineHeight: '40px', textAlign: 'center' }}>
           Blood donation is a voluntary procedure that can help save the lives of others. Donated blood is used to help people who have lost blood due to injury or surgery, people with blood disorders such as anemia or sickle cell disease, and those undergoing cancer treatments. One donation can save up to three lives.
           </p>
            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', alignContent: "center ", margin: '50px 0' }}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345 , color: '#C'}} style={{backgroundColor: '#badfed'}}>
             <CardMedia
               sx={{ height: 140 }}
               image={bloodBag}
               title="Donate"
+
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -44,14 +45,14 @@ const BloodDonation = () => {
           <div style={{ width: '450px', height: '450px' }}>
             <img src={bloodLogo} alt='Blood logo' style={{ width: '100%', height: '100%' }} />
           </div>
-          <Card sx={{ maxWidth: 345 }}>
-         `` <Card sx={{ maxWidth: 345 }}>
+          
+         <Card sx={{ maxWidth: 345 }} style={{backgroundColor: '#badfed'}}>
             <CardMedia
               sx={{ height: 140 }}
-              image={bloodBag}
+              image={donor}
               title="Donate"
             />
-            <CardContent>
+            <CardContent> 
               <Typography gutterBottom variant="h5" component="div">
                 Receive
               </Typography>
@@ -63,7 +64,7 @@ const BloodDonation = () => {
               <Link to='/Receive'><Button size="large" variant="contained">Recieve</Button></Link>
             </CardActions>
           </Card>
-          </Card>
+          
           </div>
           </div>
           </>

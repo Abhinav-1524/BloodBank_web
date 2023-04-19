@@ -7,6 +7,8 @@ import ChangePassword from './auth/ChangePassword';
 import { useGetLoggedUserQuery } from '../services/userAuthApi';
 import { useEffect, useState } from 'react';
 import { setUserInfo, unsetUserInfo } from '../features/userSlice';
+import './dashboard.css'
+import Nav from '../components/Navbar'
 
 const Dashboard = () => {
   const handleLogout = () => {
@@ -46,21 +48,21 @@ const Dashboard = () => {
 
   return <>
     <CssBaseline />
-    <Grid container sx={{ 
-      backgroundImage: 'radial-gradient(circle, rgba(158,0,0,0.8883928571428571) 0%, rgba(0,0,0,0.9780287114845938) 90%)',
-      color: 'white',
-      minHeight: '100vh'
-    }}>
-      <Grid item sm={4} sx={{ p: 5 }}>
-        <h1>Dashboard</h1>
-        <Typography variant='h5'>Email: {userData.email}</Typography>
+    <Nav />
+    <div className='total'>
+      <div className='dash'>
+        <div className='da'>
+        <h1 className='board'>DASHBOARD</h1>
+        <Typography variant='h5' className='email'>Email: {userData.email}</Typography>
         <Typography variant='h6'>Name: {userData.name}</Typography>
-        <Button variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>
-      </Grid>
-      <Grid item sm={8}>
+        <Button  className='but' variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>
+        </div>
+        <div>
         <ChangePassword />
-      </Grid>
-    </Grid>
+        </div>
+      </div>
+    </div>
+ 
   </>;
 };
 
