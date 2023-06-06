@@ -51,14 +51,16 @@ const Dashboard = () => {
     <Nav />
     <div className='total'>
       <div className='dash'>
-        <div className='da'>
-        <h1 className='board'>DASHBOARD</h1>
-        <Typography variant='h5' className='email'>Email: {userData.email}</Typography>
-        <Typography variant='h6'>Name: {userData.name}</Typography>
-        <Button  className='but' variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>
+        <div className='da-cover'>
+          <div className='da'>
+          <h1 className='board'>DASHBOARD</h1>
+          <Typography variant='h5' className='email'>Email: {userData.email}</Typography>
+          <Typography variant='h6'>Name: {userData.name}</Typography>
+          <Button  className='but' variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>
+          </div>
         </div>
-        <div>
-        <ChangePassword />
+        <div className='ch-bg'>
+          <ChangePassword />
         </div>
       </div>
     </div>

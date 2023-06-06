@@ -1,13 +1,12 @@
 .dash{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
     gap: 98px;
-    padding-top: 72px;
-    padding-bottom: 152px;
+    height: 100vh;
 }
 
 
@@ -26,7 +25,6 @@
 
 .but {
     margin-top: 23px;
-
 }
 
 .board {
@@ -39,7 +37,6 @@
 .total{
     background: rgb(158,0,0);
     background: radial-gradient(circle, rgba(158,0,0,0.8883928571428571) 0%, rgba(0,0,0,0.9780287114845938) 90%);
-
 }
 
 
@@ -47,5 +44,20 @@
     margin-bottom: 1rem;
     padding: 1rem;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  }
+}
+
+.da-cover{
+    background-color: rgb(210, 210, 210);
+    height: 30vh;
+    width: 50vh;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.ch-bg{
+    background-color: rgb(210, 210, 210);
+    height: 30vh;
+    width: 50vh;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
   
