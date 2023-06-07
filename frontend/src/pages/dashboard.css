@@ -48,16 +48,10 @@
 
 .da-cover{
     background-color: rgb(210, 210, 210);
-    height: 30vh;
+    height: 40vh;
     width: 50vh;
     border-radius: 30px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
-.ch-bg{
-    background-color: rgb(210, 210, 210);
-    height: 30vh;
-    width: 50vh;
-    border-radius: 30px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
+
   

@@ -55,7 +55,7 @@ const MyForm = () => {
       <container item xs={12} md={6}>
       
       </container>
-      <container item xs={12} md={6}>
+      <container item xs={12} md={6} className="">
         <Box className='hello'>
         <img className='visit' src={visitors} alt="placeholder" />
         <Box
