@@ -35,7 +35,7 @@ const BloodDonation = () => {
           </h3>
           <div className="button-container">
             <Link to='/Donate'><Button variant="contained" size="large" className="donate-button">Donate</Button></Link>
-            <Link to='/Recieve'><Button variant="contained" size="large" className='recieve-button'>Receive</Button></Link>
+            <Link to='/Receive'><Button variant="contained" size="large" className='recieve-button'>Receive</Button></Link>
           </div>
         </div>
       </div>
