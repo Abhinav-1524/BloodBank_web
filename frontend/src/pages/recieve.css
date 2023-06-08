@@ -9,15 +9,29 @@
 
 
 .table {
-    flex-flow: row nowrap;
     align-content: stretch;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    top: 16rem;
+    right: 5rem
 
 }
+
+.pic{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    right: 6rem;
+    top: 4rem;
+    font-size: 2rem;
+}
+
 
 .cards {
 
@@ -30,4 +44,8 @@
     align-content: stretch;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    left: 48rem;
+    top: -15rem;
+    right: -57rem;
 }
