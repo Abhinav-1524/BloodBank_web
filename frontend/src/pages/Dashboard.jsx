@@ -68,7 +68,7 @@ const Dashboard = () => {
               <Typography variant='h5' className='email'>Email: {userData.email}</Typography>
               <Typography variant='h6'>Name: {userData.name}</Typography>
               <Button className='but' variant='contained' color='warning' size='large' onClick={handleLogout} sx={{ mt: 8 }}>Logout</Button>
-              <Button className='but' variant='contained' color='primary' size='large' onClick={handleOpenDialog} sx={{ mt: 2 }}>Change Password</Button>
+              <Button className='but-2' variant='contained' size='large' onClick={handleOpenDialog} sx={{ mt: 2 }}>Change Password</Button>
             </div>
           </div>
         </div>

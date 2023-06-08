@@ -9,6 +9,9 @@
     height: 100vh;
 }
 
+.but-2{
+    color: blueviolet;
+}
 
 .da {
     display: flex;
@@ -17,6 +20,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-top: 22vh;
 }
 
 .email{
@@ -37,6 +41,7 @@
 .total{
     background: rgb(158,0,0);
     background: radial-gradient(circle, rgba(158,0,0,0.8883928571428571) 0%, rgba(0,0,0,0.9780287114845938) 90%);
+    justify-content: center;
 }
 
 
@@ -48,9 +53,9 @@
 
 .da-cover{
     background-color: rgb(210, 210, 210);
-    height: 40vh;
-    width: 50vh;
-    border-radius: 30px;
+    height: 80vh;
+    width: 90vh;
+    border-radius: 100px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
