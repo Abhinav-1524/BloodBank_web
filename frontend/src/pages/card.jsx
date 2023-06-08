@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import ContentPasteOutlinedIcon from '@mui/icons-material/ContentPasteOutlined';
 import './cards.css'
 
 const CustomCard = ({ title, bloodGroup, locality, contact }) => {
@@ -14,7 +15,7 @@ const CustomCard = ({ title, bloodGroup, locality, contact }) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 345, boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)', borderRadius: '12px' }}>
+    <Card sx={{ maxWidth: 345, boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)', borderRadius: '12px' , backgroundColor: 'azure'}}>
       <CardContent sx={{ paddingBottom: '16px !important' }}>
         <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold', marginBottom: '8px' }}>
           {title}
@@ -24,7 +25,7 @@ const CustomCard = ({ title, bloodGroup, locality, contact }) => {
           <span style={{ fontWeight: 'bold' }}>Locality:</span> {locality} <br />
           <span style={{ fontWeight: 'bold' }}>Contact:</span> {contact}
           <button onClick={handleCopyClick} style={{ marginLeft: '8px' }}>
-            Copy
+            <ContentPasteOutlinedIcon style={{fontSize: '15px'}}/>
           </button>
         </Typography>
       </CardContent>

@@ -49,8 +49,8 @@ function Receive() {
         style={{
           display: 'flex',
           alignItems: 'flex-start',
-          backgroundColor: 'blanchedalmond',
-          height: '100vh',
+          // backgroundColor: 'blanchedalmond',
+          // height: '100vh',
         }}
       >
         
